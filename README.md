@@ -55,3 +55,41 @@ Press Enter to open github.com in your browser...
 ✓ Logged in as userName
 ```
 ## 基本操作
+
+```bash
+# リモートリポジトリを作成と同時にクローン
+$ gh repo cerate --public --clone [projectName]
+
+# 現在いるプロジェクト内からそのプロジェクト名を使用し自動でリモートリポジトリを作成
+$ gh repo create
+
+# リモートリポジトリのREADMEをコンソールに表示(リポジトリ指定も可能)
+$ gh repo view
+
+# プルリクの作成
+$ gh pr create
+
+# プルリクのマージ
+$ gh pr merge
+
+# プルリクのレビュー
+$ gh pr review
+
+# プルリクの内容を閲覧
+$ gh pr view
+
+# イシューの作成
+$ gh issue create
+
+# イシューの閉鎖
+$ gh issue close
+
+# イシューの一覧表示
+$ gh issue list
+
+# イシューの再オープン
+$ gh issue list
+
+# 自身PR一覧を取得
+$ gh pr list -s all -a [自分のアカウント名>] | grep "検索文字列"
+```
